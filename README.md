@@ -8,8 +8,12 @@ Usage
 
 Include the `gallery.php` in your `functions.php`:
 
-    require_once 'gallery-metabox/gallery.php';
+```php
+require_once 'gallery-metabox/gallery.php';
+```
 
 Specify where you want the gallery metabox to show on line 21 in `gallery.php`. You can pass an array to have it show up on multiple post types, custom post types are also allowed:
 
-    array('post', 'page', 'custom-post-type')
+```php
+array('post', 'page', 'custom-post-type')
+```
