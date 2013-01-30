@@ -35,9 +35,7 @@
         <a class="gallery-add button" href="#" data-uploader-title="Add image(s) to gallery" data-uploader-button-text="Add image(s)">Add image(s)</a>
 
         <ul id="gallery-metabox-list">
-        <?php if ($ids) :
-        foreach ($ids as $key => $value) :
-          $image = wp_get_attachment_image_src($value); ?>
+        <?php if ($ids) : foreach ($ids as $key => $value) : $image = wp_get_attachment_image_src($value); ?>
 
           <li>
             <input type="hidden" name="vdw_gallery_id[<?php echo $key; ?>]" value="<?php echo $value; ?>">
