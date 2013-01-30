@@ -3,6 +3,8 @@ gallery-metabox
 
 Proper gallery metabox for WordPress. Uses the new WP 3.5 media uploader. Instead of selecting the images one at a time, you can also select multiple images. Images can be sorted by dragging the thumbnails.
 
+![gallery-metabox](http://www.daanvosdewael.com/files/gallery-metabox-preview.jpg)
+
 Usage
 -----
 
