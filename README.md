@@ -18,7 +18,7 @@ Specify where you want the gallery metabox to show on line 21 in `gallery.php`. 
 array('post', 'page', 'custom-post-type')
 ```
 
-In your template in a loop, grab the ID's of all the images with the following:
+In your template inside a loop, grab the ID's of all the images with the following:
 
 ```php
 $images = get_post_meta($post->ID, 'vdw_gallery_id', true);
