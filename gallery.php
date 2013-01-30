@@ -7,8 +7,8 @@
 
   function gallery_metabox_enqueue($hook) {
     if ( 'post.php' == $hook || 'post-new.php' == $hook ) {
-      wp_enqueue_script('gallery-metabox', get_template_directory_uri() . '/custom-meta-boxes/js/gallery-metabox.js', array('jquery', 'jquery-ui-sortable'));
-      wp_enqueue_style('gallery-metabox', get_template_directory_uri() . '/custom-meta-boxes/css/gallery-metabox.css');
+      wp_enqueue_script('gallery-metabox', get_template_directory_uri() . '/gallery-metabox/js/gallery-metabox.js', array('jquery', 'jquery-ui-sortable'));
+      wp_enqueue_style('gallery-metabox', get_template_directory_uri() . '/gallery-metabox/css/gallery-metabox.css');
     }
   }
   add_action('admin_enqueue_scripts', 'gallery_metabox_enqueue');
