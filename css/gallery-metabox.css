@@ -1,0 +1,8 @@
+#gallery-metabox-list li {
+  float: left;
+  width: 150px;
+  max-height: 200px;
+  text-align: center;
+  margin: 10px 10px 0 0;
+  cursor: move;
+}
