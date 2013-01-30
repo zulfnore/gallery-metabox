@@ -17,3 +17,18 @@ Specify where you want the gallery metabox to show on line 21 in `gallery.php`. 
 ```php
 array('post', 'page', 'custom-post-type')
 ```
+
+In your template, grab the ID's of all the images with the following:
+
+```php
+$images = get_post_meta($post->ID, 'vdw_gallery_id', true);
+```
+
+Then you can loop through the ids and call `wp_get_attachment_link` or `wp_get_attachment_image` to display the images with or without respectively:
+
+```php
+foreach ($images as $image) {
+  echo wp_get_attachment_link($image, 'gallery-thumb');
+  // echo wp_get_attachment_image($image, 'gallery-thumb');
+}
+```
