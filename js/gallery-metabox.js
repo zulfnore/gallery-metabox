@@ -6,9 +6,7 @@ jQuery(function($) {
 
     e.preventDefault();
 
-    if (file_frame) {
-      file_frame.close();
-    }
+    if (file_frame) file_frame.close();
 
     file_frame = wp.media.frames.file_frame = wp.media({
       title: $(this).data('uploader-title'),
@@ -42,9 +40,7 @@ jQuery(function($) {
 
     var that = $(this);
 
-    if (file_frame) {
-      file_frame.close();
-    }
+    if (file_frame) file_frame.close();
 
     file_frame = wp.media.frames.file_frame = wp.media({
       title: $(this).data('uploader-title'),
