@@ -30,7 +30,7 @@ Then you can loop through the IDs and call `wp_get_attachment_link` or `wp_get_a
 
 ```php
 foreach ($images as $image) {
-  echo wp_get_attachment_link($image, 'gallery-thumb');
-  // echo wp_get_attachment_image($image, 'gallery-thumb');
+  echo wp_get_attachment_link($image, 'large');
+  // echo wp_get_attachment_image($image, 'large');
 }
 ```
