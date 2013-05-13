@@ -13,15 +13,19 @@
   }
   add_action('admin_enqueue_scripts', 'gallery_metabox_enqueue');
 
-  function add_gallery_metabox() {
-    add_meta_box(
-      'gallery-metabox',
-      'Gallery',
-      'gallery_meta_callback',
-      'post',
-      'normal',
-      'high'
-    );
+  function add_gallery_metabox($post_type) {
+    $types = array('post', 'page', 'custom-post-type');
+
+    if (in_array($post_type, $types)) {
+      add_meta_box(
+        'gallery-metabox',
+        'Gallery',
+        'gallery_meta_callback',
+        $post_type,
+        'normal',
+        'high'
+      );
+    }
   }
   add_action('add_meta_boxes', 'add_gallery_metabox');
 
