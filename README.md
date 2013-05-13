@@ -8,7 +8,7 @@ Proper gallery metabox for WordPress. Uses the new WP 3.5 media uploader. Instea
 Usage
 -----
 
->This is not a plugin! You need to include this in your theme folder and further customize to your needs. If you are not comfortable doing this, don't use it...
+>This is not a plugin! You need to include this in your theme folder and further customize it to your needs. If you are not comfortable doing this, don't use it...
 
 Include the `gallery.php` in your `functions.php`:
 
